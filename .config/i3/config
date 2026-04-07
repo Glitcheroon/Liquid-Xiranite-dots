@@ -10,10 +10,12 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 for_window [window_role="GtkFileChooserDialog"] resize set 800 600
 for_window [window_role="GtkFileChooserDialog"] move position center
+for_window [window_role="GtkFileChooserDialog"] border pixel 2
+for_window [class="Nautilus"] resize set 1200 700
 default_border pixel 2
-client.focused #ef7674 #ef7674 #ffffff #ef7674 #ef77674 
-client.unfocused #ae89ff #ae89ff #ffffff #ae89ff #ae89ff
-client.focused_inactive #ae89ff #ae89ff #ffffff #ae89ff #ae89ff
+client.focused #77DD77 #77DD77 #ffffff #77DD77 #77DD77 
+client.unfocused #3C6F3C #4F934F #ffffff #4F934F #3C6F3C
+client.focused_inactive #3C6F3C #4F934F #ffffff #4F934F #3C6F3C
 
 gaps inner 5
 gaps outer 1
@@ -66,6 +68,7 @@ bindsym $mod+F4 exec --no-startup-id ~/.config/rofi/wallpaper-switcher.sh
 bindsym XF86MonBrightnessUp   exec --no-startup-id brightnessctl set 10%+
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 10%-
 bindsym $mod+F1 exec --no-startup-id blueman-manager
+bindsym $mod+F12 exec --no-startup-id arandr
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
